@@ -1,23 +1,23 @@
-class MyCounter extends HTMLElement {
-  // this is how you declare which props are you interested in
+class MyExcounter extends HTMLElement {
+
   static get observedAttributes() {
-    return ["count"];
+    return ["excount"];
   }
 
   attributeChangedCallback(propName, oldValue, newValue) {
-    console.log("changed");
+    console.log("changeded");
     this[propName] = newValue;
     this.mount();
   }
 
-  // this is the method is triggered when the component is added to the document
+  
   connectedCallback() {
-    console.log("mounted");
+    console.log("mounteded");
     this.mount();
   }
 
   dissconnectedCallback() {
-    console.log("unmounted");
+    console.log("unmounteded");
     this.removeEventListeners();
   }
 
@@ -46,8 +46,8 @@ class MyCounter extends HTMLElement {
     // adding external styles to the component
     this.shadowRoot.innerHTML = `
         <section>
-          ${this.count || 0}
-          <button> 🧡 </button>
+          ${this.excount || 0}
+          <button> ❌ </button>
         </section>
     `;
   }
@@ -60,12 +60,12 @@ class MyCounter extends HTMLElement {
 
   onButtonClicked() {
     console.log("clicked");
-      this.currentValue = Number(this.getAttribute("count"));
-      this.setAttribute("count", this.currentValue + 1);
+      this.currentValue = Number(this.getAttribute("excount"));
+      this.setAttribute("excount", this.currentValue + 1);
     
     
   }
 }
 
-customElements.define("my-counter", MyCounter);
-export default MyCounter;
+customElements.define("my-excounter", MyExcounter);
+export default MyExcounter;

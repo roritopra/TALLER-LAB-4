@@ -4,7 +4,8 @@ const data = [
         "name": "Mohammed Benjamin",
         "age": "27",
         "miles": "11 miles near",
-        "job": "Markekting"
+        "job": "Markekting",
+        "imagen": './src/imagenes/persona1.jpg'
         
     },
     
@@ -13,7 +14,8 @@ const data = [
         "name": "Marta Mercedes",
         "age": "24",
         "miles": "15 miles near",
-        "job": "Interactive Media Design"
+        "job": "Interactive Media Design",
+        "imagen": './src/imagenes/persona2.jpg'
         
         
     },
@@ -23,7 +25,8 @@ const data = [
         "name": "Lennyn Jessica",
         "age": "22",
         "miles": "12 miles near",
-        "job": "Nurse at Cedar Hospital"
+        "job": "Nurse at Cedar Hospital",
+        "imagen": './src/imagenes/persona3.jpg'
 
     },
 
@@ -32,7 +35,8 @@ const data = [
         "name": "Andrea Milano",
         "age": "31",
         "miles": "27 miles near",
-        "job": "CEO Cocacola"
+        "job": "CEO Cocacola",
+        "imagen": './src/imagenes/persona4.jpg'
     }
 
 

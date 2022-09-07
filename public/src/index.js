@@ -16,9 +16,9 @@ class AppContainer extends HTMLElement {
   render() {
     data.forEach((element) => {
       this.shadowRoot.innerHTML += `
-      <my-profile uuid="${element.id}" name="${element.name}" age="${element.age}" miles="${element.miles}" job= "${element.job}"></my-profile>
-      <my-counter></my-counter>
-      
+      <my-profile uuid="${element.id}" name="${element.name}" age="${element.age}" miles="${element.miles}" job= "${element.job}" imagen='${element.imagen}'>
+      </my-profile>
+      <my-counter></my-counter><my-excounter></my-excounter>
       `;
     });
     
